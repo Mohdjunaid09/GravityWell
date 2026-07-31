@@ -97,4 +97,3 @@ This project is available for educational and personal use.
 ## 👨‍💻 Author
 
 **MOHAMMED ABDUL JUNAID**
-CSE 
