@@ -2,98 +2,190 @@
 A Flutter-based 2D space game featuring black holes, gravity physics, particle effects, and cosmic animations.
 # 🌌 GRAVITY WELL
 
-A Flutter-based 2D space simulation that explores gravity-inspired mechanics, particle effects, and custom canvas rendering. The project demonstrates how Flutter's `CustomPainter` can be used to create an interactive cosmic environment with smooth animations and visually engaging effects.
+A physics-inspired **Flutter arcade game** where you launch a growing black hole through deep space, consume celestial bodies, increase your mass, and survive Hawking evaporation.
 
-## ✨ Features
+---
 
-* 🌑 Black hole (singularity) rendering
-* 🎯 Interactive cosmic targets
-* 🌊 Event horizon ripple effects
-* ✨ Animated particle system
-* 🖌️ Custom rendering using Flutter `Canvas`
-* 🎮 Drag-to-aim interaction
-* 🚀 Lightweight and smooth performance
+## 🚀 Features
 
-## 📸 Preview
+* 🕳️ Launch and control a black hole using drag-and-release mechanics
+* ⭐ Consume cosmic objects to increase your mass
+* 🔥 Hawking radiation gradually reduces black hole mass over time
+* 💥 Particle explosion effects when objects are absorbed
+* 🌊 Event horizon ripple animations
+* 🎯 Combo streak system with bonus mass rewards
+* 🎨 Fully custom rendering using `CustomPainter`
+* ⚡ Smooth game loop powered by Flutter's `Ticker`
 
-> Add screenshots or a GIF of the project here.
+---
+
+## 📸 Gameplay
+
+1. Drag from the spawn point to aim.
+2. Release to launch the black hole.
+3. Absorb cosmic objects to grow larger.
+4. Build combo streaks for additional mass.
+5. Avoid evaporating due to Hawking radiation.
+6. Restart and try to achieve a higher total mass.
+
+---
 
 ## 🛠️ Built With
 
 * Flutter
 * Dart
-* CustomPainter API
-* Canvas Drawing
-* Animation Framework
+* CustomPainter
+* Ticker Animation System
+* Material Design
+
+---
 
 ## 📂 Project Structure
 
 ```text
 lib/
+│
 ├── main.dart
-├── cosmic_canvas_painter.dart
-├── game_logic.dart
-├── models/
-├── widgets/
-└── utils/
+│
+├── Models
+│   ├── CosmicTarget
+│   ├── Singularity
+│   ├── HorizonRipple
+│   └── Particle
+│
+├── Game Logic
+│   ├── Physics Engine
+│   ├── Collision Detection
+│   ├── Target Spawning
+│   └── Particle System
+│
+└── Rendering
+    └── CosmicCanvasPainter
 ```
 
-## 🚀 Getting Started
+---
+
+## ▶️ Getting Started
 
 ### Prerequisites
 
-* Flutter SDK
+* Flutter SDK (latest stable version)
 * Dart SDK
-* Android Studio or VS Code
+* Android Studio, VS Code, or another Flutter-compatible IDE
 
 ### Installation
 
-1. Clone the repository:
+Clone the repository:
 
 ```bash
-git clone https://github.com/your-username/cosmic-canvas.git
+git clone https://github.com/your-username/singularity-black-hole-game.git
 ```
 
-2. Navigate to the project folder:
+Navigate to the project:
 
 ```bash
-cd cosmic-canvas
+cd singularity-black-hole-game
 ```
 
-3. Install dependencies:
+Install dependencies:
 
 ```bash
 flutter pub get
 ```
 
-4. Run the application:
+Run the application:
 
 ```bash
 flutter run
 ```
 
-## 💡 About the Project
+---
 
-This project is an experimental Flutter application focused on creating a visually appealing space environment using custom painting techniques. It combines simple physics-inspired interactions with particle animations and rendering effects to demonstrate the flexibility of Flutter's graphics APIs.
+## 🎮 Controls
 
-The project serves as a learning resource for:
+| Action  | Control                                        |
+| ------- | ---------------------------------------------- |
+| Aim     | Drag from the spawn point                      |
+| Launch  | Release your finger or mouse                   |
+| Restart | Press the **Restart** button after evaporation |
 
-* CustomPainter
-* Canvas drawing
-* Animation techniques
-* Interactive game mechanics
-* Flutter graphics programming
+---
+
+## 🧠 Game Mechanics
+
+### Black Hole
+
+* Starts with an initial mass.
+* Moves according to launch velocity.
+* Grows by absorbing nearby cosmic objects.
+
+### Hawking Radiation
+
+* Continuously decreases the black hole's mass.
+* If the mass falls below the minimum threshold, the singularity evaporates.
+
+### Cosmic Targets
+
+Each target has:
+
+* Random size
+* Random color
+* Orbital movement
+* Mass value
+
+Destroying targets increases your total mass score.
+
+### Combo System
+
+Consecutive absorptions increase your combo multiplier, granting bonus mass for each successful absorption.
+
+---
+
+## ✨ Visual Effects
+
+* Particle explosions
+* Event horizon ripples
+* Animated target movement
+* Dynamic singularity scaling
+* Deep-space themed rendering
+
+---
+
+## 📈 Future Improvements
+
+* 🌌 Animated starfield background
+* 🪐 Planets with gravity
+* 🌠 Asteroid belts
+* 🔊 Sound effects and background music
+* 🏆 High score leaderboard
+* 💾 Save game progress
+* 🎮 Multiple difficulty levels
+* 🌍 Endless survival mode
+* 📱 Haptic feedback
+* 🌈 Gravitational lensing effects
+
+---
 
 ## 🤝 Contributing
 
-Contributions, suggestions, and improvements are welcome. Feel free to fork the repository, create a new branch, and submit a pull request.
+Contributions are welcome!
+
+1. Fork the repository.
+2. Create a feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
+
+---
 
 ## 📄 License
 
-This project is available for educational and personal use.
+This project is licensed under the MIT License. See the `LICENSE` file for details.
 
 ---
 
 ## 👨‍💻 Author
+
+Developed with Flutter and Dart as a custom physics-based arcade game exploring the fascinating concepts of black holes, gravity, and Hawking radiation.
 
 **MOHAMMED ABDUL JUNAID**
